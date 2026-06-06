@@ -1,0 +1,300 @@
+/* ============================================
+   Quark UI — Design Tokens
+   A premium dark-first design system
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ── Primary (Electric Violet) ── */
+  --qk-color-primary-50: #f5f3ff;
+  --qk-color-primary-100: #ede9fe;
+  --qk-color-primary-200: #ddd6fe;
+  --qk-color-primary-300: #c4b5fd;
+  --qk-color-primary-400: #a78bfa;
+  --qk-color-primary-500: #8b5cf6;
+  --qk-color-primary-600: #7c3aed;
+  --qk-color-primary-700: #6d28d9;
+  --qk-color-primary-800: #5b21b6;
+  --qk-color-primary-900: #4c1d95;
+
+  /* ── Neutral ── */
+  --qk-color-neutral-0: #ffffff;
+  --qk-color-neutral-50: #fafafa;
+  --qk-color-neutral-100: #f4f4f5;
+  --qk-color-neutral-200: #e4e4e7;
+  --qk-color-neutral-300: #d4d4d8;
+  --qk-color-neutral-400: #a1a1aa;
+  --qk-color-neutral-500: #71717a;
+  --qk-color-neutral-600: #52525b;
+  --qk-color-neutral-700: #3f3f46;
+  --qk-color-neutral-800: #27272a;
+  --qk-color-neutral-900: #18181b;
+  --qk-color-neutral-950: #09090b;
+
+  /* ── Success (Emerald) ── */
+  --qk-color-success-50: #ecfdf5;
+  --qk-color-success-100: #d1fae5;
+  --qk-color-success-400: #34d399;
+  --qk-color-success-500: #10b981;
+  --qk-color-success-600: #059669;
+  --qk-color-success-700: #047857;
+
+  /* ── Warning (Amber) ── */
+  --qk-color-warning-50: #fffbeb;
+  --qk-color-warning-100: #fef3c7;
+  --qk-color-warning-400: #fbbf24;
+  --qk-color-warning-500: #f59e0b;
+  --qk-color-warning-600: #d97706;
+  --qk-color-warning-700: #b45309;
+
+  /* ── Danger (Rose) ── */
+  --qk-color-danger-50: #fff1f2;
+  --qk-color-danger-100: #ffe4e6;
+  --qk-color-danger-400: #fb7185;
+  --qk-color-danger-500: #f43f5e;
+  --qk-color-danger-600: #e11d48;
+  --qk-color-danger-700: #be123c;
+
+  /* ── Info (Sky Blue) ── */
+  --qk-color-info-50: #f0f9ff;
+  --qk-color-info-100: #e0f2fe;
+  --qk-color-info-400: #38bdf8;
+  --qk-color-info-500: #0ea5e9;
+  --qk-color-info-600: #0284c7;
+  --qk-color-info-700: #0369a1;
+
+  /* ── Spacing Scale (4px base) ── */
+  --qk-space-0: 0px;
+  --qk-space-0-5: 2px;
+  --qk-space-1: 4px;
+  --qk-space-1-5: 6px;
+  --qk-space-2: 8px;
+  --qk-space-2-5: 10px;
+  --qk-space-3: 12px;
+  --qk-space-3-5: 14px;
+  --qk-space-4: 16px;
+  --qk-space-5: 20px;
+  --qk-space-6: 24px;
+  --qk-space-7: 28px;
+  --qk-space-8: 32px;
+  --qk-space-9: 36px;
+  --qk-space-10: 40px;
+  --qk-space-12: 48px;
+  --qk-space-14: 56px;
+  --qk-space-16: 64px;
+
+  /* ── Border Radius ── */
+  --qk-radius-xs: 4px;
+  --qk-radius-sm: 6px;
+  --qk-radius-md: 10px;
+  --qk-radius-lg: 16px;
+  --qk-radius-xl: 24px;
+  --qk-radius-2xl: 32px;
+  --qk-radius-full: 9999px;
+
+  /* ── Typography ── */
+  --qk-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --qk-font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --qk-text-xs: 0.75rem;
+  --qk-text-sm: 0.875rem;
+  --qk-text-base: 1rem;
+  --qk-text-lg: 1.125rem;
+  --qk-text-xl: 1.25rem;
+  --qk-text-2xl: 1.5rem;
+  --qk-text-3xl: 1.875rem;
+  --qk-text-4xl: 2.25rem;
+
+  --qk-font-light: 300;
+  --qk-font-normal: 400;
+  --qk-font-medium: 500;
+  --qk-font-semibold: 600;
+  --qk-font-bold: 700;
+
+  --qk-leading-none: 1;
+  --qk-leading-tight: 1.25;
+  --qk-leading-snug: 1.375;
+  --qk-leading-normal: 1.5;
+  --qk-leading-relaxed: 1.75;
+
+  --qk-tracking-tight: -0.025em;
+  --qk-tracking-normal: 0em;
+  --qk-tracking-wide: 0.025em;
+
+  /* ── Shadows ── */
+  --qk-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --qk-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --qk-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+  --qk-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  --qk-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+  --qk-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  --qk-shadow-glow: 0 0 20px rgba(124, 58, 237, 0.3);
+  --qk-shadow-glow-lg: 0 0 40px rgba(124, 58, 237, 0.4);
+  --qk-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  /* ── Transitions ── */
+  --qk-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --qk-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --qk-transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --qk-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --qk-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --qk-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --qk-ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Focus Ring ── */
+  --qk-focus-ring-width: 2px;
+  --qk-focus-ring-offset: 2px;
+  --qk-focus-ring-color: rgba(139, 92, 246, 0.5);
+
+  /* ── Z-Index Scale ── */
+  --qk-z-dropdown: 1000;
+  --qk-z-sticky: 1100;
+  --qk-z-overlay: 1300;
+  --qk-z-modal: 1400;
+  --qk-z-popover: 1500;
+  --qk-z-tooltip: 1800;
+
+  /* ── Theme variables (Dark Theme by default) ── */
+  --qk-bg-app: var(--qk-color-neutral-950);
+  --qk-bg-sidebar: #0f0f14;
+  --qk-bg-surface-1: var(--qk-color-neutral-900);
+  --qk-bg-surface-2: var(--qk-color-neutral-800);
+  --qk-bg-surface-3: var(--qk-color-neutral-700);
+  
+  --qk-text-1: var(--qk-color-neutral-100);
+  --qk-text-2: var(--qk-color-neutral-300);
+  --qk-text-3: var(--qk-color-neutral-400);
+  --qk-text-muted: var(--qk-color-neutral-500);
+  
+  --qk-border-color: var(--qk-color-neutral-800);
+  --qk-border-color-hover: var(--qk-color-neutral-700);
+  --qk-border-color-active: var(--qk-color-neutral-600);
+  
+  --qk-shadow-card: var(--qk-shadow-lg);
+  --qk-shadow-app: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --qk-bg-glass: rgba(24, 24, 27, 0.6);
+  --qk-border-glass: rgba(255, 255, 255, 0.08);
+
+  /* ── Brand / Status Theme Colors ── */
+  --qk-theme-primary: var(--qk-color-primary-400);
+  --qk-theme-success: var(--qk-color-success-400);
+  --qk-theme-warning: var(--qk-color-warning-400);
+  --qk-theme-danger: var(--qk-color-danger-400);
+  --qk-theme-info: var(--qk-color-info-400);
+  
+  --qk-btn-outline-text: var(--qk-color-primary-400);
+  --qk-btn-outline-border: var(--qk-color-primary-500);
+  --qk-btn-outline-hover-bg: rgba(124, 58, 237, 0.1);
+
+  --qk-sidebar-active-text: #e9d5ff;
+  --qk-sidebar-active-bg: rgba(124, 58, 237, 0.1);
+  --qk-sidebar-hover-text: var(--qk-color-primary-300);
+  --qk-sidebar-hover-bg: rgba(124, 58, 237, 0.08);
+  --qk-shadow-card-hover: var(--qk-shadow-xl);
+}
+
+:root[data-theme="light"], [data-theme="light"] {
+  /* ── Light Theme Overrides ── */
+  --qk-bg-app: #f4f4f5; /* neutral-100 */
+  --qk-bg-sidebar: #ffffff; /* white */
+  --qk-bg-surface-1: #ffffff; /* white */
+  --qk-bg-surface-2: #e4e4e7; /* neutral-200 */
+  --qk-bg-surface-3: #d4d4d8; /* neutral-300 */
+  
+  --qk-text-1: #09090b; /* neutral-950 */
+  --qk-text-2: #27272a; /* neutral-800 */
+  --qk-text-3: #52525b; /* neutral-600 */
+  --qk-text-muted: #71717a; /* neutral-500 */
+  
+  --qk-border-color: #e4e4e7; /* neutral-200 */
+  --qk-border-color-hover: #d4d4d8; /* neutral-300 */
+  --qk-border-color-active: #a1a1aa; /* neutral-400 */
+  
+  --qk-shadow-card: var(--qk-shadow-sm);
+  --qk-shadow-app: 0 4px 12px rgba(9, 9, 11, 0.05);
+  --qk-bg-glass: rgba(255, 255, 255, 0.6);
+  --qk-border-glass: rgba(9, 9, 11, 0.08);
+
+  /* ── Brand / Status Theme Colors ── */
+  --qk-theme-primary: var(--qk-color-primary-700);
+  --qk-theme-success: var(--qk-color-success-700);
+  --qk-theme-warning: var(--qk-color-warning-700);
+  --qk-theme-danger: var(--qk-color-danger-700);
+  --qk-theme-info: var(--qk-color-info-700);
+  
+  --qk-btn-outline-text: var(--qk-color-primary-600);
+  --qk-btn-outline-border: var(--qk-color-primary-600);
+  --qk-btn-outline-hover-bg: rgba(124, 58, 237, 0.08);
+
+  --qk-sidebar-active-text: var(--qk-color-primary-600);
+  --qk-sidebar-active-bg: rgba(124, 58, 237, 0.08);
+  --qk-sidebar-hover-text: var(--qk-color-primary-700);
+  --qk-sidebar-hover-bg: rgba(124, 58, 237, 0.05);
+  --qk-shadow-card-hover: 0 12px 24px -8px rgba(9, 9, 11, 0.12), 0 4px 6px -2px rgba(9, 9, 11, 0.04);
+}
+
+
+
+
+
+/* ── Base Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ── Keyframe Animations ── */
+@keyframes qk-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes qk-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes qk-ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes qk-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes qk-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes qk-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

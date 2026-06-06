@@ -1,0 +1,21 @@
+.avatarGroup {
+  display: flex;
+  align-items: center;
+}
+
+.avatarGroupItem {
+  margin-left: -10px;
+  border: 2px solid var(--qk-bg-surface-1);
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.avatarGroupItem:first-child {
+  margin-left: 0;
+}
+
+.avatarGroupItem:hover {
+  transform: translateY(-4px);
+  z-index: 1;
+}

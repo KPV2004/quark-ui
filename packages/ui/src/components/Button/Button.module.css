@@ -1,0 +1,184 @@
+/* ============================================
+   Button Component Styles
+   ============================================ */
+
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--qk-space-2);
+  border: 1px solid transparent;
+  font-family: var(--qk-font-sans);
+  font-weight: var(--qk-font-semibold);
+  line-height: var(--qk-leading-tight);
+  letter-spacing: var(--qk-tracking-wide);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+  outline: none;
+  transition-property: background-color, border-color, color, box-shadow, transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.button:focus-visible {
+  box-shadow:
+    0 0 0 var(--qk-focus-ring-offset) var(--qk-bg-app),
+    0 0 0 calc(var(--qk-focus-ring-offset) + var(--qk-focus-ring-width)) var(--qk-focus-ring-color);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Sizes ── */
+
+.sizeSm {
+  height: 32px;
+  padding: 0 var(--qk-space-3);
+  font-size: var(--qk-text-xs);
+  border-radius: var(--qk-radius-sm);
+  gap: var(--qk-space-1-5);
+}
+
+.sizeMd {
+  height: 40px;
+  padding: 0 var(--qk-space-5);
+  font-size: var(--qk-text-sm);
+  border-radius: var(--qk-radius-md);
+  gap: var(--qk-space-2);
+}
+
+.sizeLg {
+  height: 48px;
+  padding: 0 var(--qk-space-7);
+  font-size: var(--qk-text-base);
+  border-radius: var(--qk-radius-md);
+  gap: var(--qk-space-2-5);
+}
+
+/* ── Variants ── */
+
+.variantPrimary {
+  background: linear-gradient(135deg, var(--qk-color-primary-600), var(--qk-color-primary-500));
+  color: #ffffff;
+  border-color: rgba(139, 92, 246, 0.2);
+  box-shadow: var(--qk-shadow-sm);
+}
+
+.variantPrimary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--qk-color-primary-500), var(--qk-color-primary-400));
+  box-shadow: var(--qk-shadow-glow);
+}
+
+.variantSecondary {
+  background-color: var(--qk-bg-surface-2);
+  color: var(--qk-text-2);
+  border-color: var(--qk-border-color);
+}
+
+.variantSecondary:hover:not(:disabled) {
+  background-color: var(--qk-bg-surface-3);
+  color: var(--qk-text-1);
+  border-color: var(--qk-border-color-hover);
+}
+
+
+.variantOutline {
+  background-color: transparent;
+  color: var(--qk-btn-outline-text);
+  border-color: var(--qk-btn-outline-border);
+}
+
+.variantOutline:hover:not(:disabled) {
+  background-color: var(--qk-btn-outline-hover-bg);
+  color: var(--qk-btn-outline-text);
+  border-color: var(--qk-btn-outline-border);
+}
+
+.variantGhost {
+  background-color: transparent;
+  color: var(--qk-btn-outline-text);
+  border-color: transparent;
+}
+
+.variantGhost:hover:not(:disabled) {
+  background-color: var(--qk-btn-outline-hover-bg);
+  color: var(--qk-btn-outline-text);
+}
+
+
+.variantDanger {
+  background: linear-gradient(135deg, var(--qk-color-danger-600), var(--qk-color-danger-500));
+  color: #ffffff;
+  border-color: rgba(244, 63, 94, 0.2);
+  box-shadow: var(--qk-shadow-sm);
+}
+
+.variantDanger:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--qk-color-danger-500), var(--qk-color-danger-400));
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.3);
+}
+
+/* ── Full Width ── */
+
+.fullWidth {
+  width: 100%;
+}
+
+/* ── Loading ── */
+
+.loading {
+  color: transparent;
+  pointer-events: none;
+}
+
+.spinnerWrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  color: #ffffff;
+  animation: qk-spin 0.6s linear infinite;
+}
+
+
+@keyframes qk-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ── Icons ── */
+
+.iconLeft,
+.iconRight {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconLeft {
+  margin-right: calc(-1 * var(--qk-space-1));
+}
+
+.iconRight {
+  margin-left: calc(-1 * var(--qk-space-1));
+}
