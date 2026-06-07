@@ -141,7 +141,7 @@ export function App() {
           </div>
           <div className={styles.versionBadge}>
             <span className={styles.versionDot} />
-            v0.1.2
+            v0.1.3
           </div>
         </div>
 
