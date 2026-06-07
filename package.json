@@ -9,5 +9,11 @@
     "build:ui": "bun run --filter @kpv2004/quark-ui build",
     "build:docs": "bun run --filter @quark-ui/docs build",
     "build": "bun run build:ui && bun run build:docs"
+  },
+  "devDependencies": {
+    "@kpv2004/quark-ui": "workspace:*",
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16",
+    "vite-plugin-dts": "^5.0.2"
   }
 }

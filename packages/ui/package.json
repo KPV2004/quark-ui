@@ -18,7 +18,7 @@
     "src/styles/tokens.css"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify --external react,react-dom"
+    "build": "vite build && mv dist/quark-ui.css dist/index.css"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
