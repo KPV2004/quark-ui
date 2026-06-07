@@ -1,4 +1,4 @@
-import { Input } from '@quark-ui/react';
+import { Input } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 import { FiSearch } from 'react-icons/fi';
 

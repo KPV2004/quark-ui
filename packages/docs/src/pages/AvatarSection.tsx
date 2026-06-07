@@ -1,4 +1,4 @@
-import { Avatar } from '@quark-ui/react';
+import { Avatar } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 import styles from './AvatarSection.module.css';
 

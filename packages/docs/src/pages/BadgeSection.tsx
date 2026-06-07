@@ -1,4 +1,4 @@
-import { Badge } from '@quark-ui/react';
+import { Badge } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 
 export function BadgeSection() {

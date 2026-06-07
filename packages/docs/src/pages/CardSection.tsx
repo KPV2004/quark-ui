@@ -1,4 +1,4 @@
-import { Card, Button } from '@quark-ui/react';
+import { Card, Button } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 
 export function CardSection() {

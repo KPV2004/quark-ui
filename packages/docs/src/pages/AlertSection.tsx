@@ -1,4 +1,4 @@
-import { Alert } from '@quark-ui/react';
+import { Alert } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 
 export function AlertSection() {

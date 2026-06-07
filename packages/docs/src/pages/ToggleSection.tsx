@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Toggle } from '@quark-ui/react';
+import { Toggle } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 
 export function ToggleSection() {

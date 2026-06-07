@@ -70,7 +70,7 @@ export function Overview() {
             <div className={styles.codeLine}>
               <span className={styles.codeKeyword}>npm</span>
               {' install '}
-              <span className={styles.codeString}>@quark-ui/react</span>
+              <span className={styles.codeString}>@kpv2004/quark-ui</span>
             </div>
             <div className={styles.codeLine}>{''}</div>
             <div className={styles.codeLine}>
@@ -87,7 +87,7 @@ export function Overview() {
               {' } '}
               <span className={styles.codeKeyword}>from</span>
               {' '}
-              <span className={styles.codeString}>'@quark-ui/react'</span>
+              <span className={styles.codeString}>'@kpv2004/quark-ui'</span>
               <span className={styles.codePunctuation}>;</span>
             </div>
             <div className={styles.codeLine}>{''}</div>
@@ -97,7 +97,7 @@ export function Overview() {
             <div className={styles.codeLine}>
               <span className={styles.codeKeyword}>import</span>
               {' '}
-              <span className={styles.codeString}>'@quark-ui/react/styles'</span>
+              <span className={styles.codeString}>'@kpv2004/quark-ui/styles'</span>
               <span className={styles.codePunctuation}>;</span>
             </div>
             <div className={styles.codeLine}>{''}</div>

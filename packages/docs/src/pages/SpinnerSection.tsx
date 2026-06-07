@@ -1,4 +1,4 @@
-import { Spinner } from '@quark-ui/react';
+import { Spinner } from '@kpv2004/quark-ui';
 import { ComponentSection, DemoBlock } from '../components/ComponentSection';
 
 export function SpinnerSection() {
