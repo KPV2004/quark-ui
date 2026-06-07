@@ -9,15 +9,15 @@ import { BadgeSection } from './pages/BadgeSection';
 import { AlertSection } from './pages/AlertSection';
 import { AvatarSection } from './pages/AvatarSection';
 import { SpinnerSection } from './pages/SpinnerSection';
-import { 
-  FiHome, 
-  FiMousePointer, 
-  FiLayers, 
-  FiEdit3, 
-  FiToggleRight, 
-  FiTag, 
-  FiBell, 
-  FiUser, 
+import {
+  FiHome,
+  FiMousePointer,
+  FiLayers,
+  FiEdit3,
+  FiToggleRight,
+  FiTag,
+  FiBell,
+  FiUser,
   FiLoader,
   FiSun,
   FiMoon
@@ -141,7 +141,7 @@ export function App() {
           </div>
           <div className={styles.versionBadge}>
             <span className={styles.versionDot} />
-            v0.1.0
+            v0.1.1
           </div>
         </div>
 

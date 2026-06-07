@@ -11,7 +11,7 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./styles": "./src/styles/tokens.css"
+    "./styles": "./dist/index.css"
   },
   "files": [
     "dist",

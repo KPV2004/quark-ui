@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "dev": "bun run --filter @quark-ui/docs dev",
-    "build:ui": "bun run --filter @quark-ui/react build",
+    "build:ui": "bun run --filter @kpv2004/quark-ui build",
     "build:docs": "bun run --filter @quark-ui/docs build",
     "build": "bun run build:ui && bun run build:docs"
   }
