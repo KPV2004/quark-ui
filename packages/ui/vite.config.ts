@@ -19,11 +19,12 @@ export default defineConfig({
       fileName: (format) => `index.${format === 'es' ? 'js' : 'cjs'}`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', /^react-icons/],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          'react-icons/fi': 'ReactIconsFi',
         },
       },
     },
